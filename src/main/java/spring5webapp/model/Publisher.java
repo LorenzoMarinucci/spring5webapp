@@ -12,16 +12,16 @@ public class Publisher {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String adress;
-	private String publisher;
+	private String name;
 	
 	public Publisher() {
 		
 	}
 	
-	public Publisher(String adress, String publisher) {
+	public Publisher(String adress, String name) {
 		super();
 		this.adress = adress;
-		this.publisher = publisher;
+		this.name = name;
 	}
 	public String getAdress() {
 		return adress;
@@ -29,11 +29,11 @@ public class Publisher {
 	public void setAdress(String adress) {
 		this.adress = adress;
 	}
-	public String getPublisher() {
-		return publisher;
+	public String getName() {
+		return name;
 	}
-	public void setPublisher(String publisher) {
-		this.publisher = publisher;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public Long getId() {
 		return id;
